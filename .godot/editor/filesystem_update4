@@ -1,3 +1,7 @@
 res://scenes/player/player.tscn
 res://scenes/level/level.tscn
 res://scenes/player/player.gd
+res://scenes/bed/bed.tscn
+res://scenes/objects/billboard.tscn
+res://scenes/drone/drone.tscn
+res://scenes/drone/drone.gd

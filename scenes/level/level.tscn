@@ -1,8 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0w2d6g3s5wil"]
+[gd_scene load_steps=5 format=3 uid="uid://b0w2d6g3s5wil"]
 
 [ext_resource type="PackedScene" uid="uid://bmtvixvsbh278" path="res://scenes/player/player.tscn" id="1_uk3hk"]
+[ext_resource type="PackedScene" uid="uid://v7orv4xm6moi" path="res://scenes/objects/bed.tscn" id="2_cllmv"]
+[ext_resource type="PackedScene" uid="uid://dhmhxaa7l0dwy" path="res://scenes/objects/billboard.tscn" id="3_xfnnf"]
+[ext_resource type="PackedScene" uid="uid://bxxby05dp4rej" path="res://scenes/drone/drone.tscn" id="4_mg60x"]
 
-[node name="level" type="Node2D"]
+[node name="Level" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_uk3hk")]
 position = Vector2(111, 226)
+
+[node name="Bed" parent="." instance=ExtResource("2_cllmv")]
+position = Vector2(796, 429)
+
+[node name="Bilboard" parent="." instance=ExtResource("3_xfnnf")]
+position = Vector2(192, 729)
+rotation = 0.622543
+
+[node name="Drone" parent="." instance=ExtResource("4_mg60x")]
+position = Vector2(58, 418)
