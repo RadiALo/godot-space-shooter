@@ -11,6 +11,8 @@ bounce = 0.4
 radius = 14.0357
 
 [node name="Grenade" type="RigidBody2D"]
+collision_layer = 8
+collision_mask = 31
 physics_material_override = SubResource("PhysicsMaterial_1j26u")
 gravity_scale = 0.0
 script = ExtResource("1_fopjc")

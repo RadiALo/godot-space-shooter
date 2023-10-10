@@ -1,5 +1,8 @@
-res://scenes/player/player.tscn
 res://scenes/level/level.tscn
+res://scenes/player/player.tscn
 res://scenes/projectiles/laser/laser.tscn
 res://scenes/projectiles/grenade/grenade.tscn
-res://scenes/player/player.gd
+res://scenes/house.tscn
+res://scenes/drone/drone.tscn
+res://scenes/objects/billboard.tscn
+res://scenes/objects/bed.tscn
