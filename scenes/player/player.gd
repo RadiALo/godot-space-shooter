@@ -22,6 +22,7 @@ func _process(_delta):
 	if (Input.is_action_pressed("primary action") and can_laser):
 		var laser_markers = $LaserStartPositions.get_children();
 		can_laser = false;
+		$GPUParticles2D.emitting = true;
 		$LaserReloadTimer.start();
 		var laser = laser_markers[randi() % laser_markers.size()];
 		var directon = (get_global_mouse_position() - position).normalized();

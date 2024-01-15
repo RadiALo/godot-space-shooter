@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b0w2d6g3s5wil"]
+[gd_scene load_steps=19 format=3 uid="uid://b0w2d6g3s5wil"]
 
 [ext_resource type="Script" path="res://scenes/level/level.gd" id="1_8eabv"]
 [ext_resource type="PackedScene" uid="uid://bmtvixvsbh278" path="res://scenes/player/player.tscn" id="1_uk3hk"]
@@ -12,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://ckjxxcgtawtxl" path="res://graphics/tilesets/outside_walls.png" id="8_lrwnc"]
 [ext_resource type="Texture2D" uid="uid://dpoebuh8r0mwq" path="res://graphics/tilesets/soil.png" id="9_n5bec"]
 [ext_resource type="PackedScene" uid="uid://c5ieept8d2lkr" path="res://scenes/house.tscn" id="12_vdhfr"]
+[ext_resource type="PackedScene" uid="uid://sosbemwah68t" path="res://scenes/objects/steam_vent.tscn" id="13_odph3"]
+[ext_resource type="PackedScene" uid="uid://ds8r8np0qpso5" path="res://scenes/objects/simple_light.tscn" id="14_4bc1q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g83op"]
 resource_name = "walls"
@@ -139,6 +141,33 @@ rotation = 0.0759038
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
+
+[node name="SteamVent" parent="." instance=ExtResource("13_odph3")]
+position = Vector2(-878, 2150)
+
+[node name="SteamVent2" parent="." instance=ExtResource("13_odph3")]
+position = Vector2(-1630, 2166)
+
+[node name="SteamVent3" parent="." instance=ExtResource("13_odph3")]
+visible = false
+position = Vector2(-1624, 1626)
+
+[node name="SimpleLight2" parent="." instance=ExtResource("14_4bc1q")]
+position = Vector2(3717, 5461)
+rotation = -0.164061
+
+[node name="SimpleLight" parent="." instance=ExtResource("14_4bc1q")]
+position = Vector2(2447, 5636)
+rotation = -0.0820305
+
+[node name="SimpleLight3" parent="." instance=ExtResource("14_4bc1q")]
+position = Vector2(3609.36, 2891)
+rotation = -0.328122
+scale = Vector2(1, 1)
+
+[node name="SimpleLight4" parent="." instance=ExtResource("14_4bc1q")]
+position = Vector2(2547, 2924)
+rotation = -0.246091
 
 [connection signal="body_entered" from="Gate/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Gate/Area2D" to="." method="_on_area_2d_body_exited"]
